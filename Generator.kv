@@ -1,0 +1,10 @@
+#:import QRCodeWidget kivy_garden.qrcode
+
+BoxLayout:
+    orientation: 'vertical'
+    Button:
+        text: 'press to change qrcode'
+        on_release: qr.data = "Kivy Rocks!"
+    QRCodeWidget:
+        id: qr
+        data: 'Hello World'
